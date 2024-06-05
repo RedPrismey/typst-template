@@ -41,15 +41,15 @@
   set text(size:10pt, font:"Montserrat", weight: 500, lang:"fr",hyphenate: false)
   show raw: set text(font: "Fira Code", size: 9pt, ligatures: true)
   set heading(numbering: "I.A.1.")
-
   set figure(kind: "figure", supplement: "Figure")
+
   let date_str = ""
-  let test = ""
   if date == [] {
     date_str = datetime.today().display("[month repr:long] [year]")
   } else {
     date_str = date
   }
+
   show heading: it => block(width: 100%)[
     #text(it, font: "Montserrat", weight: 620)
   ]
