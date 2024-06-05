@@ -111,8 +111,6 @@
     }
   ) 
 
-
-
   if preamble != [] {
     pagebreak(weak: true)
     align(smallcaps(text("Préambule", size: 12pt, weight: 650)), center)
@@ -124,6 +122,8 @@
   set page(
     header: normalheader(authors, info, title)
   )
+  show link: set text(fill: rgb(123,104,238,255))
+
   doc
 }
 
@@ -210,7 +210,5 @@
     x: 15pt
   )
 }
-
-#let coloredLink(lnk, value) = link(lnk, text(value, fill: rgb(123,104,238,255)))
 
 #let pseudocode(content) = text(content, font: "TeX Gyre DejaVu Math", size: 10pt)

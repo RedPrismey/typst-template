@@ -1,4 +1,4 @@
-#import "template.typ" : init, codeblock, pseudocode, coloredLink, remark, levels
+#import "template.typ" : init, codeblock, pseudocode, remark, types
 
 #show: doc => init(
   title: "Le document de test",
@@ -10,7 +10,7 @@
   doc,
 )
 
-= Morphismes :
+= Morphismes
 
 #codeblock(
   [print(\"oula la programmation\")],
@@ -18,6 +18,6 @@
   filename: "test.py"
 )
 
-#coloredLink("https://youtube.com", "test")
+#link("https://youtube.com", "link")
 
-#remark("voilà là c'est une remarque", type: levels.warning)
+#remark("voilà là c'est une remarque", type: types.warning)
